@@ -4,8 +4,8 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "build": "bunx tsc",
-    "prepare": "bunx tsc"
+    "build": "bunx tsc && bun build src/index.ts --outdir dist",
+    "prepare": "bunx tsc && bun build src/index.ts --outdir dist"
   },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
